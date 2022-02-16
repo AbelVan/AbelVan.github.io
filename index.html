@@ -62,7 +62,15 @@
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://AbelVan.github.io/images/apple-touch-icon-144x144-precomposed.png">
 </head>
-
+<style>
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;
+}
+</style>
 <body style="background-color:#C0C0C0";class="home">
 
 <!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
@@ -114,7 +122,10 @@
 -->
 
 <a href="http://github.com/AbelVan" class="author-widgets" target="_blank"><i class="fa fa-fw fa-github"></i> Github</a>
-
+<button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+    点击这里来显示日期和时间
+</button>
 
 
   </div>
@@ -140,11 +151,13 @@
 
 <div class="footer-wrap">
   <footer>
-    
+    <p>Happy Day！</p>
 
   </footer>
 </div><!-- /.footer-wrap -->
-
+<div id="footer">
+<p id="demo">Happy Day！</p>
+</div>
 <script src="https://AbelVan.github.io/assets/js/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="https://AbelVan.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="https://AbelVan.github.io/assets/js/scripts.min.js"></script>
